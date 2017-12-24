@@ -13,9 +13,3 @@ yum install devtoolset-6 -y
 scl enable devtoolset-6 bash 
 ln -sf /opt/rh/devtoolset-6/root/usr/bin/g++ /usr/bin/c++ 
 #
-
-cmake3 . -DCUDA_ENABLE=OFF -DOpenCL_ENABLE=OFF -DMICROHTTPD_ENABLE=OFF -DHWLOC_ENABLE=OFF -DOpenSSL_ENABLE=OFF 
-make install 
-cd bin 
-
-# sysctl -w vm.nr_hugepyautoguies=128
